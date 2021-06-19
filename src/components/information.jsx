@@ -11,19 +11,20 @@ import CloudIcon from '@material-ui/icons/Cloud';
 const useStyles=makeStyles(
     {
         component:{
-            margin:35,
+            margin:30,
 
         },
         row:{
             padding:12,
-            fontSize:'1.4vw',
+          fontSize: 'calc(14px + (24 - 14) * ((100vw - 768px) / (1600 - 768)))',
             color:'white',
             letterSpacing:2,
             fontFamily:'Source Sans Pro'
         },
         icon: {
             color: 'black',
-            marginRight: 20,
+            marginRight: 5,
+              fontSize: 'calc(22px + (30 - 22) * ((100vw - 768px) / (1600 - 768)))',
             
 
         },
