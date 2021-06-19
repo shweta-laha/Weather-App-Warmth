@@ -11,7 +11,7 @@ function App() {
     <div style={{ 
     textAlign:'center', 
     letterSpacing:60,
-    fontSize:'3.0vw',
+    fontSize: 'calc(30px + 3 * ((98vw - 380px) / 690))',
     fontFamily:'Quicksand',
     color:'black',
   

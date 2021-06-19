@@ -16,7 +16,7 @@ marginLeft:'5%'
 },
     leftContainer:{
         backgroundImage: `url(${logo})`,
-        height:'95vh',
+        height:'98vh',
         width:'60%',
         backgroundSize: 'cover',
         borderRadius: '60px 0 0 60px',
@@ -26,7 +26,7 @@ marginLeft:'5%'
     rightContainer:{
         background:'linear-gradient(to right,rgba(11, 55, 71),  rgba(188, 241, 247))',
       color:'black',
-        height:'95vh',
+        height:'98vh',
         width:'80%',
         fontSize:30
         
