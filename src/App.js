@@ -1,6 +1,6 @@
 import React from 'react';
 import Weather from './components/Weather.jsx';
-import ParticlesBg from 'particles-bg'
+import ParticlesBg from 'particles-bg';
 
 
 
@@ -11,10 +11,10 @@ function App() {
     <div style={{ 
     textAlign:'center', 
     letterSpacing:60,
-    fontSize: 'calc(30px + 3 * ((98vw - 380px) / 690))',
+    fontSize: 'calc(23px + (30 - 23) * ((100vw - 768px) / (1600 - 768)))',
     fontFamily:'Quicksand',
     color:'black',
-  
+    fontWeight: 'bold'
     }}><br/>
     
    <ParticlesBg type="circles" 

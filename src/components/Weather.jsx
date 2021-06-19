@@ -7,7 +7,7 @@ import Clock from 'react-live-clock';
 
 const useStyles=makeStyles({
 component:{
-height:'100vh',
+height:'135vh',
 display:'flex',
 alignItems:'center',
 width:'90%',
@@ -16,7 +16,7 @@ marginLeft:'5%'
 },
     leftContainer:{
         backgroundImage: `url(${logo})`,
-        height:'98vh',
+        height:'125vh',
         width:'60%',
         backgroundSize: 'cover',
         borderRadius: '60px 0 0 60px',
@@ -26,7 +26,7 @@ marginLeft:'5%'
     rightContainer:{
         background:'linear-gradient(to right,rgba(11, 55, 71),  rgba(188, 241, 247))',
       color:'black',
-        height:'98vh',
+        height:'125vh',
         width:'80%',
         fontSize:30
         
@@ -41,7 +41,7 @@ const classes = useStyles();
         <Box className={classes.component}>
 
           <Box className={classes.leftContainer} style={{   fontFamily:'Quicksand',}}>
-          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+          <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
           <div style={{
               textAlign:'center',
                fontSize:'2.8vw',
@@ -53,7 +53,7 @@ const classes = useStyles();
 
 {new Date().getDate()} {new Date().toLocaleString("en-US", { month: "long" })}, {new Date().getFullYear()}
 <br/>
-           <Clock  style={{fontSize:'1.8vw'}}
+           <Clock  style={{fontSize:'2vw'}}
            format={'HH:mm:ss'} ticking={true} timezone={'India'} /></div>
            </Box>
 
