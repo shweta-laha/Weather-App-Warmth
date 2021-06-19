@@ -1,5 +1,6 @@
 {
-  "name": "weather",
+  "homepage": "http://shweta-laha.github.io/Weather-App-Warmth/",
+  "name": "weather",  
   "version": "0.1.0",
   "private": true,
    "engines": {
@@ -22,6 +23,8 @@
     "babel-present-env":"^1.7.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
