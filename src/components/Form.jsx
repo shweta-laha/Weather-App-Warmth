@@ -1,5 +1,5 @@
 import React from "react";
-import {useEffect, useState} from 'react';
+import {useState,useCallback} from 'react';
 import {Box, TextField, Button, makeStyles} from '@material-ui/core';
 import {getData} from '../service/api.js';
 import Information from './information.jsx'
@@ -30,22 +30,26 @@ button:{
 
 const Form= ()=> {
 const classes=useStyles();
- const [data,getWeatherData]=useState();
+ const [data,setWeatherData]=useState();
  const [city, setCity]=useState('');
  const [country, setCountry]=useState('');
- const [click, handleClick]=useState('false');
+ const handleClick=useCallback(() => {
+  const getWeather = async () => {
+    city && country && await getData(city, country)
+      .then(response => {
+        setWeatherData(response.data);
+      });
+  }
+  getWeather();
+}, [city, country]);
 
-  useEffect(()=>{
-   const getWeather=async()=>{
-   city && await getData(city,country).then(response =>{
-    getWeatherData(response.data);
-      console.log(response.data)
-    }
-     )
-      }
-    getWeather();
-    handleClick(false);
-},[click]);
+
+
+
+
+
+
+  
 
 const handleCityChange=(value)=>{
   setCity(value);
