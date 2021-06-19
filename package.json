@@ -1,6 +1,6 @@
 {
   "homepage": "http://shweta-laha.github.io/Weather-App-Warmth/",
-  "name": "weather-app-warmth",  
+  "name": "weather",  
   "version": "0.1.0",
   "private": true,
    "engines": {
@@ -49,7 +49,6 @@
     ]
   },
   "devDependencies": {  
-    "gh": "^2.8.6",  
-    "pages": "0.0.16"  
+    "gh": "^3.2.2"
   } 
 }
