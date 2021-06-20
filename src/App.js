@@ -10,11 +10,12 @@ function App() {
     color:'white'}}>
     <div style={{ 
     textAlign:'center', 
-    letterSpacing:60,
-    fontSize: 'calc(23px + (30 - 23) * ((100vw - 768px) / (1600 - 768)))',
+    letterSpacing:57,
+    fontSize: 'calc(19px + (36 - 19) * ((100vw - 768px) / (1600 - 768)))',
     fontFamily:'Quicksand',
     color:'black',
     fontWeight: 'bold'
+  
     }}><br/>
     
    <ParticlesBg type="circles" 

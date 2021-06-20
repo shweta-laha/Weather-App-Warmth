@@ -8,13 +8,15 @@ import Information from './information.jsx'
 const useStyles= makeStyles({
 component:{
   padding:20,
-  backgroundColor:'rgba(31, 100, 128)'
+  backgroundColor:'rgba(31, 100, 128)',
+
 },
 
 input:{
 color:'white',
 marginRight:15,
 marginLeft:15,  
+
   },
 button:{
   width:100,
