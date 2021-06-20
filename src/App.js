@@ -15,7 +15,7 @@ function App() {
         style={{
           textAlign: "center",
           letterSpacing: 60,
-          fontSize: "calc(23px + (30 - 23) * ((100vw - 768px) / (1600 - 768)))",
+          fontSize: "calc(19px + (33 - 19) * ((100vw - 768px) / (1600 - 768)))",
           fontFamily: "Quicksand",
           color: "black",
           fontWeight: "bold",
