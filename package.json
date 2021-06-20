@@ -1,7 +1,7 @@
 {
   "homepage": "http://shweta-laha.github.io/Weather-App-Warmth/",
   "name": "weather",
-  "version": "0.1.0",
+  "version": "0.1.0",  
   "private": true,
   "engines": {
     "node": "v14.16.1"

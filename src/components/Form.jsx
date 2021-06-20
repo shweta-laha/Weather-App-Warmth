@@ -4,26 +4,10 @@ import { Box, TextField, Button, makeStyles } from "@material-ui/core";
 import { getData } from "../service/api.js";
 import Information from "./information.jsx";
 
-<<<<<<< HEAD
-
-const useStyles= makeStyles({
-component:{
-  padding:20,
-  backgroundColor:'rgba(31, 100, 128)',
-
-},
-
-input:{
-color:'white',
-marginRight:15,
-marginLeft:15,  
-
-=======
 const useStyles = makeStyles({
   component: {
     padding: 20,
     backgroundColor: "rgba(31, 100, 128)",
->>>>>>> f826bbb84bb5ef8bf854f831a1abc39073e3288d
   },
 
   input: {
@@ -41,18 +25,6 @@ const useStyles = makeStyles({
   },
 });
 
-<<<<<<< HEAD
-
-
-
-
-
-  
-
-const handleCityChange=(value)=>{
-  setCity(value);
-}
-=======
 const Form = () => {
   const classes = useStyles();
   const [data, setWeatherData] = useState();
@@ -68,7 +40,6 @@ const Form = () => {
     };
     getWeather();
   }, [city, country]);
->>>>>>> f826bbb84bb5ef8bf854f831a1abc39073e3288d
 
   const handleCityChange = (value) => {
     setCity(value);
@@ -108,19 +79,6 @@ const Form = () => {
           }}
         />
 
-<<<<<<< HEAD
-            <Button  
-            variant="outlined" 
-            onClick={()=>handleClick(true)}
-            className={classes.button}
-            style={{color: 'rgba(184, 191, 194)'}}>Search</Button>
-            </Box>
-            <Information data={data}/>
-        </React.Fragment>
-        )   
-    }
-    export default Form;
-=======
         <Button
           variant="outlined"
           onClick={() => handleClick(true)}
@@ -135,4 +93,3 @@ const Form = () => {
   );
 };
 export default Form;
->>>>>>> f826bbb84bb5ef8bf854f831a1abc39073e3288d
