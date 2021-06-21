@@ -38,7 +38,7 @@ const Information =({data})=> {
         <Typography className={classes.row}><LinearScaleIcon className={classes.icon}/>   Temparature: {data.main.temp}° C</Typography>
         <Typography className={classes.row}><OpacityIcon  className={classes.icon}/>   Humidity: {data.main.humidity} %</Typography>
         <Typography className={classes.row}><Brightness5Icon className={classes.icon}/>   Sunrise: {new Date (data.sys.sunrise*1000).toLocaleTimeString()}</Typography>
-        <Typography className={classes.row}> < Brightness6Icon className={classes.icon}/>   Sunrise: {new Date (data.sys.sunset*1000).toLocaleTimeString()}</Typography>
+        <Typography className={classes.row}> < Brightness6Icon className={classes.icon}/>   Sunset: {new Date (data.sys.sunset*1000).toLocaleTimeString()}</Typography>
         <Typography className={classes.row}><DehazeIcon className={classes.icon}/>   Condition: {data.weather[0].main}</Typography>
         <Typography className={classes.row}><CloudIcon className={classes.icon}/>   Clouds: {data.clouds.all} %</Typography>
         </Box> : ''
